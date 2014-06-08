@@ -23,16 +23,16 @@ const struct TodoFetchedProperties TodoFetchedProperties = {
 
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
-	return [NSEntityDescription insertNewObjectForEntityForName:@"Entity" inManagedObjectContext:moc_];
+	return [NSEntityDescription insertNewObjectForEntityForName:@"Todo" inManagedObjectContext:moc_];
 }
 
 + (NSString*)entityName {
-	return @"Entity";
+	return @"Todo";
 }
 
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
-	return [NSEntityDescription entityForName:@"Entity" inManagedObjectContext:moc_];
+	return [NSEntityDescription entityForName:@"Todo" inManagedObjectContext:moc_];
 }
 
 - (TodoID*)objectID {

@@ -12,6 +12,11 @@
 		1732A8C5194310A7006A6CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1732A8C3194310A7006A6CEE /* Main.storyboard */; };
 		1732A8C7194310A7006A6CEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1732A8C6194310A7006A6CEE /* Images.xcassets */; };
 		1732A8D3194310A8006A6CEE /* TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732A8D2194310A8006A6CEE /* TodoTests.swift */; };
+		173C272A19449D02007B46AA /* Todo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 173C272819449D02007B46AA /* Todo.xcdatamodeld */; };
+		173C27301944A52C007B46AA /* _Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 173C272D1944A52C007B46AA /* _Todo.m */; };
+		173C27311944A52C007B46AA /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 173C272F1944A52C007B46AA /* Todo.m */; };
+		177B7CFF19440E85000648C6 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B7CFE19440E85000648C6 /* AddTodoViewController.swift */; };
+		DF7B719A8D9D4A31A67A1A6C /* libPods-Todo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 063702D8DB3F4606A32B5662 /* libPods-Todo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		063702D8DB3F4606A32B5662 /* libPods-Todo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Todo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1732A8BA194310A7006A6CEE /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1732A8BE194310A7006A6CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1732A8BF194310A7006A6CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +40,14 @@
 		1732A8CC194310A8006A6CEE /* TodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1732A8D1194310A8006A6CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1732A8D2194310A8006A6CEE /* TodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTests.swift; sourceTree = "<group>"; };
+		173C272919449D02007B46AA /* Todo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todo.xcdatamodel; sourceTree = "<group>"; };
+		173C272C1944A52C007B46AA /* _Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Todo.h; sourceTree = "<group>"; };
+		173C272D1944A52C007B46AA /* _Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Todo.m; sourceTree = "<group>"; };
+		173C272E1944A52C007B46AA /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
+		173C272F1944A52C007B46AA /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
+		173C27321944A5EC007B46AA /* SwiftTodo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftTodo-Bridging-Header.h"; sourceTree = "<group>"; };
+		177B7CFE19440E85000648C6 /* AddTodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
+		73DA7D35C5F24045BD5DF2BC /* Pods-Todo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todo.xcconfig"; path = "Pods/Pods-Todo.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF7B719A8D9D4A31A67A1A6C /* libPods-Todo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +72,12 @@
 		1732A8B1194310A7006A6CEE = {
 			isa = PBXGroup;
 			children = (
+				173C272B1944A52C007B46AA /* Model */,
 				1732A8BC194310A7006A6CEE /* Todo */,
 				1732A8CF194310A8006A6CEE /* TodoTests */,
 				1732A8BB194310A7006A6CEE /* Products */,
+				73DA7D35C5F24045BD5DF2BC /* Pods-Todo.xcconfig */,
+				D00CB93302F84AC5A8EDBA38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,7 +95,10 @@
 			children = (
 				1732A8BF194310A7006A6CEE /* AppDelegate.swift */,
 				1732A8C1194310A7006A6CEE /* ViewController.swift */,
+				177B7CFE19440E85000648C6 /* AddTodoViewController.swift */,
 				1732A8C3194310A7006A6CEE /* Main.storyboard */,
+				173C272819449D02007B46AA /* Todo.xcdatamodeld */,
+				173C27321944A5EC007B46AA /* SwiftTodo-Bridging-Header.h */,
 				1732A8C6194310A7006A6CEE /* Images.xcassets */,
 				1732A8BD194310A7006A6CEE /* Supporting Files */,
 			);
@@ -109,6 +130,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		173C272B1944A52C007B46AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				173C272C1944A52C007B46AA /* _Todo.h */,
+				173C272D1944A52C007B46AA /* _Todo.m */,
+				173C272E1944A52C007B46AA /* Todo.h */,
+				173C272F1944A52C007B46AA /* Todo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D00CB93302F84AC5A8EDBA38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				063702D8DB3F4606A32B5662 /* libPods-Todo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1732A8D6194310A8006A6CEE /* Build configuration list for PBXNativeTarget "Todo" */;
 			buildPhases = (
+				908501DCEDE24F1EA1024BCB /* Check Pods Manifest.lock */,
 				1732A8B6194310A7006A6CEE /* Sources */,
 				1732A8B7194310A7006A6CEE /* Frameworks */,
 				1732A8B8194310A7006A6CEE /* Resources */,
+				56579CE9C3C94724AA631AC5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,13 +245,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56579CE9C3C94724AA631AC5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Todo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		908501DCEDE24F1EA1024BCB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1732A8B6194310A7006A6CEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1732A8C2194310A7006A6CEE /* ViewController.swift in Sources */,
+				173C27311944A52C007B46AA /* Todo.m in Sources */,
+				173C27301944A52C007B46AA /* _Todo.m in Sources */,
+				177B7CFF19440E85000648C6 /* AddTodoViewController.swift in Sources */,
 				1732A8C0194310A7006A6CEE /* AppDelegate.swift in Sources */,
+				173C272A19449D02007B46AA /* Todo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,23 +401,29 @@
 		};
 		1732A8D7194310A8006A6CEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DA7D35C5F24045BD5DF2BC /* Pods-Todo.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Todo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/SwiftTodo-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		1732A8D8194310A8006A6CEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DA7D35C5F24045BD5DF2BC /* Pods-Todo.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Todo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/SwiftTodo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -397,6 +482,7 @@
 				1732A8D8194310A8006A6CEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1732A8D9194310A8006A6CEE /* Build configuration list for PBXNativeTarget "TodoTests" */ = {
 			isa = XCConfigurationList;
@@ -405,8 +491,22 @@
 				1732A8DB194310A8006A6CEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		173C272819449D02007B46AA /* Todo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				173C272919449D02007B46AA /* Todo.xcdatamodel */,
+			);
+			currentVersion = 173C272919449D02007B46AA /* Todo.xcdatamodel */;
+			path = Todo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1732A8B2194310A7006A6CEE /* Project object */;
 }
